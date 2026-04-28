@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Spec } from '../spec/spec';
-import { Pokemon } from '../models/pokemon.model';
+import { ModelloPokemon } from '../models/pokemon.model';
 
 
 @Component({
@@ -10,8 +10,8 @@ import { Pokemon } from '../models/pokemon.model';
   styleUrl: './lista.css',
 })
 export class Lista {
-  listapokemon: Pokemon[];
-  selectedPokemon?: Pokemon;
+  listapokemon: ModelloPokemon[];
+  selectedPokemon?: ModelloPokemon;
   constructor(){
     this.listapokemon =[
       {
@@ -32,7 +32,7 @@ export class Lista {
       }
     ]
   }
-  selectPokemon(pokemon: Pokemon): void {
-    this.selectedPokemon = pokemon;
+  selectPokemon(pokemonselezionato: ModelloPokemon): void {
+    this.selectedPokemon = pokemonselezionato;
   }
 }

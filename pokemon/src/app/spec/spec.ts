@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Pokemon } from '../models/pokemon.model';
+import { ModelloPokemon } from '../models/pokemon.model';
 
 
 @Component({
@@ -9,5 +9,5 @@ import { Pokemon } from '../models/pokemon.model';
   styleUrl: './spec.css',
 })
 export class Spec {
-  @Input() pokemon!: Pokemon;
+  @Input() p!: ModelloPokemon;
 }

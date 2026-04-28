@@ -1,8 +1,8 @@
-@if (pokemon) {
+@if (p) {
     <div>
-        <h2>{{ pokemon.name }}</h2>
-        <p>Type: {{ pokemon.type }}</p>
-        <img [src]="pokemon.imageUrl" width="300" height="300">
-        <p>{{ pokemon.description }}</p>
+        <h2>{{ p.name }}</h2>
+        <p>Type: {{ p.type }}</p>
+        <img [src]="p.imageUrl" width="300" height="300">
+        <p>{{ p.description }}</p>
     </div>
 }
